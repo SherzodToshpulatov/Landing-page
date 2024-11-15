@@ -27,6 +27,10 @@ body{
     
 }
 
+.logo{
+    cursor: pointer;
+}
+
 button{
     width: 12rem;
     height: 3rem;
