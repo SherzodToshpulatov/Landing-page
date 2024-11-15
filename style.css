@@ -1,4 +1,6 @@
 *{
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -12,6 +14,10 @@
 
 body{
     width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
@@ -75,35 +81,38 @@ header{
     color: #292929;
 }
 .hero{
-    
-    height: 895px;
+    width: 100% ;
+    height: 100vh;
     background-image: url('./assets/images/BG.png');
+    object-fit: cover;
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-
 }
 
 .hero_container{
-    width: 1413px;
+    width: 70%;
+    display: flex;
 }
 
 .hero_items{
     width: 420px;
-    height: 384px;
     padding-top: 300px;
 }
 
 .features{
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
 }
 
 .features_container{
-    margin-top: 150px; 
-    width: 1413px;
-    height: 1386px;
+    width: 70%;
+    padding: 100px 0px;
     
 }
 
@@ -182,13 +191,21 @@ header{
 }
 .story{
     background-color: #245852;
-    width: 1920px;
+    width: 100%;
     height: 922px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 207px;
+    /* padding: 207px; */
 }
+
+.story .container{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 .story_left_p{
     color: white;
     font-size: 25px;
@@ -222,19 +239,27 @@ header{
 .product_left{
     position: relative;
 }
-
+.product_left img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 .product_card{
-    width: 296px;
-    height: 296px;
+    /* width: 296px;
+    height: 296px; */
+    padding: 1.5rem 2.5rem;
     background-color: white;
     border-radius: 5px;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: -30px;
-    left: -100px;
+    /* bottom: -30px;
+    left: -100px; */
+    bottom: -50px;
+    left: -50px;
     -webkit-box-shadow: 0 0 10px #7c7a7a;
             box-shadow: 0 0 10px #979696;
 }
@@ -271,6 +296,7 @@ header{
 }
 
 .footer{
+    width: 100%;
     height: 654px;
     background-color: #245852;
     display: flex;
