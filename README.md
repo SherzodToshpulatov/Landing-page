@@ -4,7 +4,7 @@ This is a solution to the [figma design](https://www.figma.com/file/Xb40Lwkq6D8N
 
 ### Links
 
-- Live Site URL: [live site here](https://article-preview-component-one-bay.vercel.app/)
+- Live Site URL: [live site here](https://landing-page-kappa-ten-54.vercel.app/)
 
 
 ### Built with
